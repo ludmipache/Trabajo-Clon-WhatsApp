@@ -1,0 +1,26 @@
+.sidebar {
+    width: 300px;
+    min-width: 300px;
+    border-radius: 1px solid #ccc;
+    align-self: stretch;
+    background-color: #111b21;
+    color: white;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-name {
+    margin: 0;
+}
+
+.contact-last-message {
+    margin:0;
+    color: gray;
+}
