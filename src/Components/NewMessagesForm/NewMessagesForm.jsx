@@ -2,6 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import { ContactContext } from '../Context/ContactContext'
 import { useParams } from 'react-router'
+import './NewMessagesFrom.css'
 
 
 export default function NewMessagesForm() {
@@ -18,8 +19,9 @@ function NewMessages (event) {
 
 
 return (
-    <div>
+    <div className='Messages-Form'>
         <form onSubmit={NewMessages}>
+            <button>+</button>
             <textarea name="contenido" id="Nuevo Mensaje"></textarea>
             <button>Enviar</button>
         </form>

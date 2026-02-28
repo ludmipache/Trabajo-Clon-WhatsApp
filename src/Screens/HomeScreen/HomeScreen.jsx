@@ -4,8 +4,8 @@ import ContactScreen from '../ContactScreen/ContactScreen'
 import { useParams } from 'react-router'
 import './HomeScreen.css'
 import whatsappIllustration from '../../assets/imagenes/Descargas.png'
-import documentIcon from 'src\assets\imagenes\docs_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
-import contactIcon from 'src\assets\imagenes\person_add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg'
+import documentIcon from "../../assets/imagenes/docs_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+import contactIcon from "../../assets/imagenes/person_add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
 
 export default function HomeScreen() {
     const { contact_id } = useParams()

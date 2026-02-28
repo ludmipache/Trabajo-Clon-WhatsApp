@@ -3,7 +3,7 @@
 .sidebar {
     width: 300px;
     min-width: 300px;
-    border-radius: 1px solid #ccc;
+    border-right: 1px solid #ccc;
     align-self: stretch;
     background-color: #111b21;
     color: white;
@@ -18,12 +18,23 @@
     width: 100%;
 }
 
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
 .contact-last-message {
     margin:0;
     color: gray;
 }
 
+.contact-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
 
 .search-container {
     padding: 5px;

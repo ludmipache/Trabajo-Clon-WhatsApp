@@ -52,6 +52,11 @@ return (
                 className="contact-item"
                 onClick={() => navigate(`/contact/${contact.id}`)}
             >
+                <img 
+            src={contact.porfile_picture} 
+            alt={contact.name} 
+            className="contact-avatar" 
+        />
             <div className="contact-info">
                 <p className="contact-name">{contact.name}</p>
                 <p className="contact-last-message">{contact.last_time_connection}</p>

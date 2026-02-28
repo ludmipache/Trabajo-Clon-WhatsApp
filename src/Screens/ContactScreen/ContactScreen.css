@@ -8,6 +8,23 @@
     background-size: cover;
 }
 
+.chat-header {
+    background-color: #111B21;
+    display: flex;
+    height: 55px;
+}
+
+.header-avatar{
+    height: 50px;
+    border-radius: 30px;
+}
+
+.chat-header h2 {
+    margin: 0;
+    padding: 12px 10px;
+    font-size: 16px;
+}
+
 .messages {
     flex: 1;
     overflow-y: auto;
@@ -27,20 +44,15 @@
 
 .message-theirs {
     align-self: flex-start;
-    background-color: #242626;
+    background-color: #111B21;
     color: white;
     padding: 8px 12px;
     border-radius: 10px;
     max-width: 60%;
 }
 
-.chat-header h2 {
-    margin: 0;
-    font-size: 16px;
+.messages-time{
+    color: #A1A2A2;
+    
 }
 
-.chat-header p {
-    margin: 0;
-    font-size: 12px;
-    color: #aaa;
-}
