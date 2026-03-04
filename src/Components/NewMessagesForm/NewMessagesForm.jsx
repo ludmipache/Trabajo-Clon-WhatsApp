@@ -19,11 +19,14 @@ function NewMessages (event) {
 
 
 return (
-    <div className='Messages-Form'>
-        <form onSubmit={NewMessages}>
-            <button>+</button>
-            <textarea name="contenido" id="Nuevo Mensaje"></textarea>
-            <button>Enviar</button>
+    <div className="form-container">
+        <form onSubmit={NewMessages} style={{ display: 'flex', flex: 1, gap: '10px', alignItems: 'center' }}>
+        <textarea
+            name="contenido"
+            className="message-input"
+            placeholder="Escribe un mensaje..."
+        />
+        <button type="submit" className="send-button">➤</button>
         </form>
     </div>
 )

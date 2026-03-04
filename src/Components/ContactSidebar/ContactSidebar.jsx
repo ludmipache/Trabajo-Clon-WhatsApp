@@ -4,7 +4,7 @@ import { useNavigate, useSearchParams } from 'react-router'
 import './ContactSidebar.css'
 
 export default function ContactSidebar() {
-const { contacts } = useContext(ContactContext)
+const { contacts, user } = useContext(ContactContext)
 const navigate = useNavigate()
 
 const [searchParams, setSearchParams] = useSearchParams();
@@ -67,6 +67,14 @@ return (
             <p className="no-results">No se encontraron contactos</p>
         )}
         </div>
+
+        <div className="user-profile">
+            <div className="user-avatar">
+    {user?.nombre?.charAt(0).toUpperCase()}
+            </div>
+            <p>{user?.nombre}</p>
+    </div>
+
     </div>
 );
 }

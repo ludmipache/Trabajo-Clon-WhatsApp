@@ -7,22 +7,43 @@
     align-self: stretch;
     background-color: #111b21;
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-list {
+    overflow-y: auto;
+    flex: 3;
+}
+
+.contacts-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.contacts-list::-webkit-scrollbar-track {
+    background: #111b21;
+}
+
+.contacts-list::-webkit-scrollbar-thumb {
+    background: #374045;
+    border-radius: 3px;
 }
 
 .contact-item {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
     padding: 10px;
     cursor: pointer;
     width: 100%;
+    overflow: hidden;
 }
 
 .contact-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
+    flex: 1;
 }
 
 .contact-last-message {
@@ -81,4 +102,26 @@
     color: #8696a0;
     margin-right: 5px;
     font-size: 14px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #202c33;
+    border-top: 1px solid #374045;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00a884;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
 }

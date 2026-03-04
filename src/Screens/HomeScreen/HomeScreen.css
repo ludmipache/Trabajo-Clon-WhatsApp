@@ -91,3 +91,41 @@
 .illustration{
     background-color: transparent;
 }
+
+.sidebar-wrapper{
+    display: flex;
+    height: 100%;
+}
+
+    .back-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    .sidebar-wrapper {
+        width: 100vw !important;
+        min-width: 100vw !important;
+    }
+
+    .content-area {
+        width: 100vw !important;
+        height: 100vw !important;
+        flex-direction: column;
+    }
+
+    .back-button {
+        display: block;
+        background-color: #202c33;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        font-size: 16px;
+    }
+}

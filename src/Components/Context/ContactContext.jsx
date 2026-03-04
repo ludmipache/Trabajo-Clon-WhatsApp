@@ -5,6 +5,11 @@ export const ContactContext = createContext()
 
 export default function ContactsContextProvider({ children }) {
     const [contacts, setContacts] = useState(getContacts())
+    const [user, setUser] = useState(null)
+
+    function login(nombre) {
+        setUser ({nombre})
+    }
 
 function sendMessage(contact_id, text) {
     const newMessage = {
@@ -27,7 +32,7 @@ function sendMessage(contact_id, text) {
 }
 
 return (
-    <ContactContext.Provider value={{ contacts, sendMessage }}>
+    <ContactContext.Provider value={{ contacts, sendMessage, user, login }}>
         {children}
     </ContactContext.Provider>
 )
